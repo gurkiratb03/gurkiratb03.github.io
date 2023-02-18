@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Gurkirat Bindra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e937b1102b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src = "Images/logo.png" class = "logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring Software Engineer</p>
+            <h1>Hi, I'm <span>Gurkirat</span>.<br> Welcome to my<br> portfolio site!</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------------about---------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+            <h1 class = "sub-title">About Me</h1>
+            <p> I'm a second year Computer Engineering student at the Lassonde School of Engineering in York University. 
+                My goals after graduation are to earn a job at Tesla as I’m very passionate for electric vehicles 
+                and their positive global impact on our ecosystem. Tesla’s growing reputation tied with productional 
+                and economical efficiency inspires me to a great extent and I envision myself to be a contributor 
+                in this sector of engineering in the near future.</p>
+
+               <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Outstanding</span><br>Problem Solving Abilities</li>
+                    <li><span>Advanced</span><br>Computer Proficiency</li>
+                    <li><span>Expertise</span><br>Java OOP, MATLAB, HTML, CSS</li>
+                    <li><span>Debugging</span><br>Convoluted Software Programs</li>
+                    <li><span>Computer</span><br>Hardware Assembly & Software Installation</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Software</span><br>Development Using Java, Python & C(Programming Language)</li>
+                    <li><span>Software Program</span><br>Testing & Prototyping Using JUnit & JShell</li>
+                    <li><span>Swing GUI</span><br>Desktop App Development</li>
+                    <li><span>Desktop Computer</span><br>Hardware Assembly & Software Implementation</li>
+                    <li><span>Complex</span><br>Digital & Electronic Device Repairs</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Lassonde</span><br>School of Engineering, B.Eng., Spec. Hons. Computer Engineering</li>
+                    <li><span>North Park</span><br>Secondary School, 89.7% Cumulative Average</li>
+                </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------projects-------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-computer"></i>
+                <h2>Custom Liquid Cooled System</h2>
+                <p>Built the system from scratch, installed the neccessary hardware and software components. Enabled functionality by conducting BIOS updates and installing the OS.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Automated Plant Watering System (Java OOP)</h2>
+                <p>Designed a plant watering system using Java & Firmata as part of a Object Oriented Programming Course.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Automated Plant Watering System (MATLAB)</h2>
+                <p>Designed a plant watering system using MATLAB & Firmata as part of a Computational Thinking Course.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------portfolio---------------------- -->
+<div id="portfolio">
+     <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.jpeg">
+                <div class="layer">
+                    <h3>Desktop Computer Assembly</h3>
+                    <p>During the COVID-19 pandemic, I opened a private business to provide services such as assembling low-high end computers for 
+                       customers depending on their needs. This business allowed me to enhance my customer service along with problem solving skills. Shown image exhibits
+                       one of the many builds I completed. </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>My Portfolio Website</h3>
+                    <p>The website you're currently browsing 
+                       was designed using HTML, CSS & JavaScript. It is actively under development as I continue to expand my knowledge by working on additional projects.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Fitness Planner App</h3>
+                        <p>Designed a fitness planner app using Java called "Flexx". Used Swing GUI to implement the app features while prioritizing user-friendliness.
+                           Collaborated with four individuals to plan and produce the final product in a timely and systematic demeanor.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+     </div>
+</div>
+<!-- ----------------------contact------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> gurkiratb298@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (647)-410-7441</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gurkiratbindra"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/gurkiratb03"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/gurkiratb_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/gurkiratb_"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="Images/GBResume2023.pdf" download class="btn btn2">My Resume</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> 2023 Gurkirat. Created by Gurkirat Bindra</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvWCK2iqwiLwbNFHLgBJLQ3NhUeIobi3w_PZwx_GWl3aEa3yhNB8XHynlUZ5tzpefQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
