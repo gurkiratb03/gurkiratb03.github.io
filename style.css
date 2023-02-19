@@ -10,6 +10,8 @@ html{
 body{
     background: #080808;
     color: #fff;
+    margin: 0; /* Set margin to 0 to ensure sticky top bar works */
+
 }
 #header{
     width: 100%;
@@ -18,8 +20,9 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;   /*creates parallax effect*/
-
+    
 }
+
 .container{
     padding: 10px 10%;
 }
