@@ -9,11 +9,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="64x64" href="Images/favicon-64x64.png">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/e937b1102b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://kit.fontawesome.com/e937b1102b.js" crossorigin="anonymous"></script>  
 </head>
 <body>
 <div id = "header">
-    <div class="container">
+    <div class="container animate__animated animate__fadeInDown">
         <nav>
             <img src = "Images/logo.png" class = "logo">
             <ul id="sidemenu">
@@ -26,7 +29,7 @@
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text">
+        <div class="header-text animate__animated animate__pulse">
             <p>Aspiring Software Engineer</p>
             <h1>Hi, I'm <span>Gurkirat</span>.<br> Welcome to my<br> portfolio site!</h1>
         </div>
@@ -34,12 +37,12 @@
 </div>
 <!-- ---------------about---------------------- -->
 <div id="about">
-    <div class="container">
+    <div class="container animate__animated animate__fadeInLeft">
         <div class="row">
-            <div class="about-col-1">
+            <div class="about-col-1 animate__animated animate__pulse">
                 <img src="Images/user.jpeg">
             </div>
-            <div class="about-col-2">
+            <div class="about-col-2 animate__animated animate__fadeInUp">
             <h1 class = "sub-title">About Me</h1>
             <p> I'm a second year Computer Engineering student at the Lassonde School of Engineering in York University. 
                 My goals after graduation are to earn a job at Tesla as I’m very passionate for electric vehicles 
@@ -47,12 +50,12 @@
                 and economical efficiency inspires me to a great extent and I envision myself to be a contributor 
                 in this sector of engineering in the near future.</p>
 
-               <div class="tab-titles">
+               <div class="tab-titles animate__animated animate__fadeUp">
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                 <p class="tab-links" onclick="opentab('experience')">Experience</p>
                 <p class="tab-links" onclick="opentab('education')">Education</p>
                </div>
-               <div class="tab-contents active-tab" id="skills">
+               <div class="tab-contents active-tab animate__animated animate__fadeInUp" id="skills">
                 <ul>
                     <li><span>Outstanding</span><br>Problem Solving Abilities</li>
                     <li><span>Advanced</span><br>Computer Proficiency</li>
@@ -61,7 +64,7 @@
                     <li><span>Computer</span><br>Hardware Assembly & Software Installation</li>
                 </ul>
                </div>
-               <div class="tab-contents" id="experience">
+               <div class="tab-contents animate__animated animate__fadeInUp" id="experience">
                 <ul>
                     <li><span>Software</span><br>Development Using Java, Python & C(Programming Language)</li>
                     <li><span>Software Program</span><br>Testing & Prototyping Using JUnit & JShell</li>
@@ -70,7 +73,7 @@
                     <li><span>Complex</span><br>Digital & Electronic Device Repairs</li>
                 </ul>
                </div>
-               <div class="tab-contents" id="education">
+               <div class="tab-contents animate__animated animate__fadeInUp" id="education">
                 <ul>
                     <li><span>Lassonde</span><br>School of Engineering, B.Eng., Spec. Hons. Computer Engineering</li>
                     <li><span>North Park</span><br>Secondary School, 89.7% Cumulative Average</li>
@@ -82,23 +85,23 @@
 </div>
 <!-- ---------------projects-------------------- -->
 <div id="services">
-    <div class="container">
+    <div class="container animate__animated animate__fadeInRight">
         <h1 class="sub-title">My Projects</h1>
         <div class="services-list">
             <div>
-                <i class="fa-sharp fa-solid fa-computer"></i>
+                <i class="fa-sharp fa-solid fa-computer animate__animated animate__flash"></i>
                 <h2>Custom Liquid Cooled System</h2>
                 <p>Built the system from scratch, installed the neccessary hardware and software components. Enabled functionality by conducting BIOS updates and installing the OS.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
-                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-java animate__animated animate__flash"></i>
                 <h2>Automated Plant Watering System (Java OOP)</h2>
                 <p>Designed a plant watering system using Java & Firmata as part of a Object Oriented Programming Course.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-code animate__animated animate__flash"></i>
                 <h2>Automated Plant Watering System (MATLAB)</h2>
                 <p>Designed a plant watering system using MATLAB & Firmata as part of a Computational Thinking Course.</p>
                 <a href="#">Learn more</a>
@@ -108,10 +111,10 @@
 </div>
 <!-- --------------portfolio---------------------- -->
 <div id="portfolio">
-     <div class="container">
+     <div class="container animate__animated animate__fadeInLeft">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
+            <div class="work animate__animated animate__flash">
                 <img src="Images/work-1.jpeg">
                 <div class="layer">
                     <h3>Desktop Computer Assembly</h3>
@@ -121,7 +124,7 @@
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class="work">
+            <div class="work animate__animated animate__flash">
                 <img src="Images/work-2.png">
                 <div class="layer">
                     <h3>My Portfolio Website</h3>
@@ -130,7 +133,7 @@
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class="work">
+            <div class="work animate__animated animate__flash">
                     <img src="Images/work-3.png">
                     <div class="layer">
                         <h3>Fitness Planner App</h3>
@@ -146,7 +149,7 @@
 </div>
 <!-- ----------------------contact------------------ -->
 <div id="contact">
-    <div class="container">
+    <div class="container animate__animated animate__fadeIn">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
@@ -225,7 +228,59 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-  
-  
+
+<script>
+    $(document).ready(function() {
+      var waypoint = new Waypoint({
+        element: document.getElementById('about'),
+        handler: function() {
+          $('#about').addClass('animate__animated animate__fadeInLeft');
+          $('#about').css('opacity', '1');
+        },
+        offset: '50%'
+      });
+    });
+    </script>
+
+<script>
+    $(document).ready(function() {
+      var waypoint = new Waypoint({
+        element: document.getElementById('services'),
+        handler: function() {
+          $('#services').addClass('animate__animated animate__fadeInRight');
+          $('#services').css('opacity', '1');
+        },
+        offset: '50%'
+      });
+    });
+    </script>
+    <script>
+        $(document).ready(function() {
+          var waypoint = new Waypoint({
+            element: document.getElementById('portfolio'),
+            handler: function() {
+              $('#portfolio').addClass('animate__animated animate__fadeInLeft');
+              $('#portfolio').css('opacity', '1');
+            },
+            offset: '50%'
+          });
+        });
+        </script>
+        <script>
+            $(document).ready(function() {
+              var waypoint = new Waypoint({
+                element: document.getElementById('contact'),
+                handler: function() {
+                  $('#contact').addClass('animate__animated animate__fadeIn');
+                  $('#contact').css('opacity', '1');
+                },
+                offset: '50%'
+              });
+            });
+            </script>
+            <script>$(document).ready(function() {
+                $('#header').hide().fadeIn(1000); // fade in over 1 second (1000ms)
+              });</script>
+              
 </body>
 </html>

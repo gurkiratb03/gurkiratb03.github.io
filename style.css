@@ -78,6 +78,7 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     color: #ababab;
+    opacity: 0;
 }
 .row{
     display: flex;
@@ -145,6 +146,7 @@ nav ul li a:hover::after{
 /* -----------------------------projects----------------------- */
 #services{
     padding: 30px 0;
+    opacity: 0;
 }
 .services-list{
     display: grid;
@@ -184,6 +186,7 @@ nav ul li a:hover::after{
 /* -------------------------------portfolio---------------------------- */
 #portfolio{
     padding: 50px 0;
+    opacity: 0;
 }
 .work-list{
     display: grid;
@@ -258,6 +261,9 @@ nav ul li a:hover::after{
 }
 
 /* -----------------contact-------------------- */
+#contact{
+    opacity: 0;
+}
 .contact-left{
     flex-basis: 35%;
 }
