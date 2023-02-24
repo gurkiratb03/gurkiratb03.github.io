@@ -32,7 +32,7 @@
         </nav>
         <div class="header-text animate__animated animate__pulse">
             <p>Aspiring Software Engineer</p>
-            <h1>Hi, I'm <span>Gurkirat</span>.<br> Welcome to my<br> portfolio site!</h1>
+            <h1>Hi, I'm <span>Gurkirat</span>.<br> Welcome to my <br> site!</h1>
         </div>
     </div>
 </div>
@@ -332,10 +332,86 @@ function writeTextLive(element) {
       });
       writeTextLive(document.querySelector('#about p'));
     });
-
-
-
   </script>
+
+
+
+
+<script>
+    // Get the text content of the p and h1 tags
+    const pText = document.querySelector('.header-text p').textContent;
+    const h1Text = document.querySelector('.header-text h1').innerHTML;
+    
+    // Clear the text content of p and h1 tags
+    document.querySelector('.header-text p').textContent = '';
+    document.querySelector('.header-text h1').innerHTML = '';
+    
+    
+    let pIndex = 0;
+    let h1Index = 0;
+    let isInTag = false;
+    let welcomeMessageDisplayed = false;
+    let portfolioSiteDisplayed = false;
+    
+    // Type out the text content of p tag
+    function typeP() {
+      if (pIndex < pText.length) {
+        document.querySelector('.header-text p').textContent += pText.charAt(pIndex);
+        pIndex++;
+        setTimeout(typeP, 50); // adjust typing speed as needed
+      }
+    }
+    
+    // Type out the text content of h1 tag
+    function typeH1() {
+      if (h1Index < h1Text.length) {
+        const currentChar = h1Text.charAt(h1Index);
+    
+        if (currentChar === '<') {
+          isInTag = true;
+        } else if (currentChar === '>') {
+          isInTag = false;
+        }
+    
+        if (!isInTag && currentChar !== '>') {
+          if (h1Text.substring(h1Index, h1Index + 13) === 'Welcome to my') {
+            document.querySelector('.header-text h1').innerHTML += '<br>';
+          }
+          if (h1Text.substring(h1Index, h1Index + 8) === 'Gurkirat') {
+            const spanElement = document.createElement('span');
+            spanElement.style.color = '#ff004f';
+            for (let i = 0; i < 8; i++) {
+              const letterSpan = document.createElement('span');
+              letterSpan.textContent = h1Text.charAt(h1Index + i);
+              spanElement.appendChild(letterSpan);
+            }
+            document.querySelector('.header-text h1').appendChild(spanElement);
+            h1Index += 7;
+          } else {
+            document.querySelector('.header-text h1').innerHTML += currentChar;
+          }
+          if (h1Text.substring(h1Index, h1Index + 4) === '<br>' && !welcomeMessageDisplayed) {
+            welcomeMessageDisplayed = true;
+            document.querySelector('.header-text h1').innerHTML += '<br>';
+          } else if (h1Text.substring(h1Index, h1Index + 13) === 'Portfolio site!' && !portfolioSiteDisplayed) {
+            portfolioSiteDisplayed = true;
+            document.querySelector('.header-text h1').innerHTML += '<br>';
+          }
+        }
+    
+        h1Index++;
+        setTimeout(typeH1, 50); // adjust typing speed as needed
+      }
+    }
+    
+    
+    // Call the typeP and typeH1 functions when the page loads
+    window.onload = function() {
+      typeP();
+      setTimeout(typeH1, 1000); // adjust delay as needed
+    };
+    </script>
+    
 
 </body>
 </html>
