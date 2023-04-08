@@ -183,6 +183,21 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
+.service-title {
+    transition: transform 0.3s;
+}
+
+.service-title:hover {
+    transform: scale(1.2);
+}
+
+.service-text {
+    transition: transform 0.3s;
+}
+
+.service-text:hover {
+    transform: scale(1.1);
+}
 /* -------------------------------portfolio---------------------------- */
 #portfolio{
     padding: 50px 0;

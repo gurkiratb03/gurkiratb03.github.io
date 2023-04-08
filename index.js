@@ -231,7 +231,6 @@ window.addEventListener('DOMContentLoaded', function() {
     setTimeout(typeH1, 1000); // adjust delay as needed
   }});
 
-
            
 
             
