@@ -129,7 +129,7 @@
                 if (i > text.length - 1) {
                   clearInterval(intervalId);
                 }
-              }, 7);
+              }, 10);
             }
           }
           
