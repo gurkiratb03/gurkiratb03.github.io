@@ -155,6 +155,22 @@ nav ul li a:hover::after{
     grid-gap: 40px; 
     margin-top: 50px;
 }
+.service-icon-link {
+    display: inline-flex; /* Aligns items inline with flexibility */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    margin-top: 20px; /* Adds space above the icons */
+    margin-right: 10px; /* Adds space between the icons */
+    color: #ffffff; /* Sets the icon color */
+    font-size: 16px; /* Sets the icon size */
+    text-decoration: none; /* Removes underline from icons */
+}
+
+.service-icon-link:hover {
+    color: #cccccc; /* Lightens the icon on hover for interactivity */
+}
+
+
 .services-list div{
     background: #262626;
     padding: 40px;
